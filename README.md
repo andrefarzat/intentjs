@@ -1,8 +1,7 @@
 intentjs
 ========
 
-Highly configurable sharing dialogs for the most common websites
-----------------------------------------------------------------
+#### Highly configurable sharing dialogs for the most common websites
 
 Uses a main configuration interace among all services.
 
@@ -17,17 +16,18 @@ Usage
 -----
 
 The short version is
+```javascript
+Intent.twitter({ "text": "Text in the tweet", "via": "example", "url": "http://example.com" });
+```
 
-    Intent.twitter({ "text": "Text in the tweet", "via": "example", "url": "http://example.com" });
-
-However, there may be some configuration specific for service.
+However, there may be some specific configuration for the service.
 See below all possible services and their configurations.
 
 
-Facebook
---------
+### Facebook
 
-Check the [official facebook documentation](https://developers.facebook.com/docs/sharing/reference/feed-dialog) for more details
+
+Check the [official facebook documentation](https://developers.facebook.com/docs/sharing/reference/feed-dialog#params) for more details
 
 
 ## Roadmap
