@@ -26,7 +26,6 @@ See below all possible services and their configurations.
 
 ### Facebook
 
-
 Check the [official facebook documentation](https://developers.facebook.com/docs/sharing/reference/feed-dialog#params) for more details
 
 
