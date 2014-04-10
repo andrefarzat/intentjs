@@ -1,5 +1,6 @@
 intentjs
 ========
+[![Build Status](https://travis-ci.org/andrefarzat/intentjs.svg?branch=master)](https://travis-ci.org/andrefarzat/intentjs)
 
 #### Highly configurable sharing dialogs for the most common websites
 
