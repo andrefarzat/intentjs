@@ -26,13 +26,35 @@ See below all possible services and their configurations.
 
 ### Facebook
 
+'app_id': '',
+'link': '',
+'display': 'popup',
+'name': '',
+'caption': '',
+'description': '',
+'picture': '',
+'source': '',
+'ref': 'share',
+'actions': '',
+'redirect_uri': '',
+'id': '',
+'relative_url': '',
+'feature': 'share',
+'attribution_tag ' : '',
+
+```javascript
+Intent.facebook({})
+```
+
 Check the [official facebook documentation](https://developers.facebook.com/docs/sharing/reference/feed-dialog#params) for more details
 
 
 ## Roadmap
 
 * facebook
+ - actions
 * twitter
+ - actions
 * google plus (gplus)
 * linkedin
 * pinterest

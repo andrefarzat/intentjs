@@ -41,30 +41,41 @@
         'gplus': '//plus.google.com/u/0/share'
     };
 
-    /**
-     * Facebook default config
-     * @type {Object}
-     * @see https://developers.facebook.com/docs/sharing/reference/feed-dialog
-     */
-    Intent.facebookConfig = {
-        'app_id': '',
-        'link': '',
-        'display': 'popup',
-        'name': '',
-        'caption': '',
-        'description': '',
-        'picture': '',
-        'source': '',
-        'ref': 'share',
-        'actions': '',
-        'redirect_uri': '',
-        'id': '',
-        'relative_url': '',
-        'feature': 'share',
-        'attribution_tag ' : '',
 
-        'width': 650,
-        'height': 306
+    /**
+     * All registered services
+     * @type {Object}
+     */
+    Intent.services = {
+
+        /**
+         * Facebook default config
+         * @see https://developers.facebook.com/docs/sharing/reference/feed-dialog
+         */
+        'facebook': {
+            'url': '//facebook.com/dialog/feed',
+            'config': {
+                'display': 'popup',
+                'ref': 'share'
+            }
+        },
+
+        /**
+         * Twitter default config
+         * @see https://dev.twitter.com/docs/intents
+         */
+        'twitter': {
+            'url': '//twitter.com/intent/tweet',
+            'config': {}
+        },
+
+        /**
+         * Google default config
+         */
+        'gplus': {
+            'url': '//plus.google.com/u/0/share',
+            'config': {}
+        }
     };
 
     /**
@@ -73,7 +84,7 @@
      * @param {Object} config The facebook config parameters
      */
     Intent.facebook = function(config){
-        config = extend({}, Intent.facebookConfig, config || {});
+        config = extend({}, Intent.services.facebook, config || {});
         Intent.open('facebook', config);
     };
 
@@ -99,7 +110,7 @@
      * @param  {object} data Will be added as get parameters
      */
     Intent.open = function(serviceName, data){
-        var url = Intent._urls[serviceName],
+        var url = Intent.services[serviceName].url,
             params = [],
             i, top, left, w, h;
 

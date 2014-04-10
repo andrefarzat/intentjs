@@ -1,0 +1,31 @@
+{
+  "name": "intentjs",
+  "version": "0.0.0",
+  "description": "intentjs ========",
+  "main": "intent.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "karma": "~0.12.6"
+  },
+  "devDependencies": {
+    "karma": "~0.12.6"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrefarzat/intentjs.git"
+  },
+  "keywords": [
+    "intent"
+  ],
+  "author": "Andre Farzat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrefarzat/intentjs/issues"
+  },
+  "homepage": "https://github.com/andrefarzat/intentjs"
+}
