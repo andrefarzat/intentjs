@@ -5,7 +5,7 @@
         define([root], factory);
     } else if (typeof angular !== 'undefined'){
         // angular. Register as a service.
-        angular.module('intentjs').service('Intent', function(){
+        angular.module('intentjs', []).service('Intent', function(){
             return factory(root, {});
         });
     } else {
