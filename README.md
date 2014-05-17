@@ -18,7 +18,11 @@ Usage
 
 The short version is
 ```javascript
-Intent.twitter({ "text": "Text in the tweet", "via": "example", "url": "http://example.com" });
+Intent.twitter({
+    "text": "Text in the tweet",
+    "via": "example",
+    "url": "http://example.com"
+});
 ```
 
 However, there may be some specific configuration for the service.
