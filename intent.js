@@ -3,6 +3,11 @@
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define([root], factory);
+    } else if (typeof angular !== 'undefined'){
+        // angular. Register as a service.
+        angular.module('intentjs').service('Intent', function(){
+            return factory(root, {});
+        });
     } else {
         // Browser globals
         root.Intent = factory(root, {});
@@ -40,7 +45,6 @@
         'twitter': '//twitter.com/intent/tweet',
         'gplus': '//plus.google.com/u/0/share'
     };
-
 
     /**
      * All registered services

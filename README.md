@@ -25,7 +25,7 @@ Intent.twitter({
 });
 ```
 
-However, there may be some specific configuration for the service.
+However, there may be some specific configuration for each service.
 See below all possible services and their configurations.
 
 
